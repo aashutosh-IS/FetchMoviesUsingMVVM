@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   android:layout_height="match_parent"
+                                                   android:layout_width="match_parent">
+
+
+    <LinearLayout android:layout_height="match_parent" android:layout_width="match_parent"
+                  android:orientation="vertical">
+
+        <ProgressBar android:layout_height="match_parent" android:layout_width="wrap_content" android:visibility="gone"
+                     android:layout_gravity="center" android:id="@+id/progress_bar"/>
+
+        <TextView android:layout_height="match_parent" android:layout_width="match_parent" android:visibility="gone"
+                  android:id="@+id/txt_error" android:text="Connection Problem!!" android:gravity="center"/>
+
+
+        <ScrollView android:layout_height="match_parent" android:layout_width="match_parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+            <LinearLayout android:layout_height="match_parent" android:layout_width="match_parent"
+                          android:orientation="vertical" android:id="@+id/linearLayout">
+
+                <ImageView android:layout_height="500dp" android:layout_width="match_parent"
+                           android:layout_gravity="center" android:id="@+id/iv_movie_poster"
+                           android:src="@mipmap/ic_launcher" android:scaleType="matrix"/>
+
+
+                <LinearLayout android:layout_height="match_parent" android:layout_width="match_parent"
+                              android:orientation="vertical" android:layout_margin="8dp">
+
+                    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content"
+                              android:id="@+id/movie_title" android:text="movie" android:textSize="18sp"
+                              android:textStyle="bold"/>
+
+                    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content"
+                              android:id="@+id/movie_tagline" android:text="sub title" android:textSize="14sp"
+                              android:textStyle="bold"/>
+
+                    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content"
+                              android:text="Movie Info" android:textSize="14sp" android:textStyle="bold"
+                              android:layout_marginTop="15dp"/>
+
+
+                    -
+                    <LinearLayout android:layout_height="match_parent" android:layout_width="match_parent"
+                                  android:orientation="horizontal">
+
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content"
+                                  android:text="ReleaseD ate: " android:textSize="12sp" android:textStyle="bold"
+                                  android:layout_marginTop="2dp"/>
+
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content"
+                                  android:id="@+id/movie_release_date" android:text="2019" android:textSize="12sp"
+                                  android:layout_marginTop="2dp"/>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout android:layout_height="match_parent" android:layout_width="match_parent"
+                                  android:orientation="horizontal">
+
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content"
+                                  android:text="Rating: " android:textSize="12sp" android:textStyle="bold"
+                                  android:layout_marginTop="2dp"/>
+
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content"
+                                  android:id="@+id/movie_rating" android:text="8" android:textSize="12sp"
+                                  android:layout_marginTop="2dp"/>
+
+                    </LinearLayout>
+
+
+                    -
+                    <LinearLayout android:layout_height="match_parent" android:layout_width="match_parent"
+                                  android:orientation="horizontal">
+
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content"
+                                  android:text="Runtime: " android:textSize="12sp" android:textStyle="bold"
+                                  android:layout_marginTop="2dp"/>
+
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content"
+                                  android:id="@+id/movie_runtime" android:text="2.3 hr" android:textSize="12sp"
+                                  android:layout_marginTop="2dp"/>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout android:layout_height="match_parent" android:layout_width="match_parent"
+                                  android:orientation="horizontal">
+
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content"
+                                  android:text="Budget: " android:textSize="12sp" android:textStyle="bold"
+                                  android:layout_marginTop="2dp"/>
+
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content"
+                                  android:id="@+id/movie_budget" android:text="130,000" android:textSize="12sp"
+                                  android:layout_marginTop="2dp"/>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout android:layout_height="match_parent" android:layout_width="match_parent"
+                                  android:orientation="horizontal">
+
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content"
+                                  android:text="Revenue: " android:textSize="12sp" android:textStyle="bold"
+                                  android:layout_marginTop="2dp"/>
+
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content"
+                                  android:id="@+id/movie_revenue" android:text="130,000" android:textSize="12sp"
+                                  android:layout_marginTop="2dp"/>
+
+                    </LinearLayout>
+
+                    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content"
+                              android:text="Overview " android:textSize="12sp" android:textStyle="bold"
+                              android:layout_marginTop="2dp"/>
+
+                    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content"
+                              android:id="@+id/movie_overview" android:text="overview ........." android:textSize="12sp"
+                              android:layout_marginTop="2dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
